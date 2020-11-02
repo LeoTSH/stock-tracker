@@ -4,7 +4,7 @@ The model is trained in Tensorflow (Keras) using self-collected images and deplo
 
 ** **Notes:** **
 * Model file is not included due to Github file size limitation of 100MB (Model is ~104MB)
-* Images are not provided to reduce repository size
+* Image dataset is not provided to reduce repository size
 
 # <font size="5"> Table of Contents </font>
 [Overview](#overview)  
