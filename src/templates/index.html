@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <style>
+      #table_div {
+        display: none;
+        color: white;
+      }
+
+      #stock_table, td, th {
+        border: 1px solid white;
+        text-align: left;
+      }
+
+      td, th {
+        padding: 10px;
+      }
+      
+      body {
+        background-color:black;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/script.js')}}"></script>
+    <title>Stock Maintainer</title>
+  </head>
+  <body>
+    <h1>Webcam Feed</h1>
+    <img src="{{ url_for('display_webcam') }}">
+    <input id="add" type="button" value="Add Item">
+    <input id="remove" type="button" value="Remove Item">
+    <input id="stock" type="button" value="Check Stock">
+    <input id="screenshot" type="button" value="Take Screenshot">
+
+    <div id='table_div' class='hidden'>
+      <table id="stock_table" class="table table-hover">
+        <thead>
+            <tr>
+                <th>Item Type</th>
+                <th>Stock Count</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+
+        </tbody>
+      </table>
+    </div>
+
+  </body>
+</html>
