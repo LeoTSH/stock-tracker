@@ -4,6 +4,7 @@ pipeline {
         stage('test') {
             steps {
                 sh 'echo test start'
+                sh 'echo test 123'
                 sh 'echo test stop'
             }
         }
