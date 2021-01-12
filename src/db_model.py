@@ -10,4 +10,5 @@ db = SQLAlchemy(app)
 class Item(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     item_type = db.Column(db.String(4096), unique=True, nullable=False, index=True)
+    num_items = db.Column(db.Integer, nullable=False, default=0)
     date_added = db.Column(db.DateTime, index=False, default=datetime.utcnow)

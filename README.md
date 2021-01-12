@@ -8,7 +8,6 @@ The model is trained in Tensorflow (Keras) using self-collected images and deplo
 
 # <font size="5"> Table of Contents </font>
 [Overview](#overview)  
-[Prerequisites](#prequisites)  
 [Usage](#usage)  
 [TODO](#todo)
 
@@ -21,15 +20,8 @@ The model is trained in Tensorflow (Keras) using self-collected images and deplo
 ![Overview](./videos_images/overview.jpg "Overview")
 [![Demo](./videos_images/demo.gif)](https://youtu.be/Nhm-BBN-o2o)
 
-# <font size="5"> Prequisites </font>
-* tensorflow    
-* matplotlib
-* numpy
-* pandas
-* sklearn
-* flask
-* cv2
-* sqlalchemy
+# <font size="5"> Usage </font>
+
 
 # <font size="5"> TODO </font>
 Current stage of project is a working version with addtional updates planned for improvements

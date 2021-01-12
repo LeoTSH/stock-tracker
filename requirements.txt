@@ -1,0 +1,13 @@
+tensorflow
+numpy
+pandas 
+matplotlib
+seaborn
+jupyter 
+flask
+scikit-learn 
+opencv-python
+flask-sqlalchemy
+Pillow
+jupyter_contrib_nbextensions
+jupyter_nbextensions_configurator

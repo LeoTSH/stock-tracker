@@ -11,10 +11,12 @@ function check_item(action){
 
             if (action=='add') {
                 // Add to db
-                let cfm_window = confirm(`Please confirm addtion of detected item: ${item}`);
+                let cfm_window = confirm('Please confirm addtion of detected item: ${item}');
                 if (cfm_window){
+                    var num_items = prompt('Enter number of items to add: ', '1');
                     $.post('/add_to_db', {
-                        item:item
+                        item:item,
+                        number:num_items
                     }).done(function(data) {
                         $.post('/delete_file', {
                             img_name:img_name
@@ -33,7 +35,7 @@ function check_item(action){
                 }
             }
             else if (action=='remove') {
-                let cfm_window = confirm(`Please confirm removal of detected item: ${item}`);
+                let cfm_window = confirm('Please confirm removal of detected item: ${item}');
                 if (cfm_window) {
                     $.post('/remove_from_db', {
                         item:item
